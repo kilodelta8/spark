@@ -32,3 +32,16 @@ OLD:
         >>>db.session.add(User('username'))
 
     >>>db.session.commit()
+
+
+
+
+#MAC  NEW
+from your_application import app, db, User, Glass, Log  # Adjust the import according to your application structure
+
+with app.app_context():
+    db.create_all()
+
+    # Add objects
+    db.session.add(User('username'))
+    db.session.commit()
